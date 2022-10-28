@@ -1,0 +1,218 @@
+/* 
+основиний текст: #757575;
+другорядний текст:  #212121;
+білий : #FFFFFF;
+footer rgba(255, 255, 255, 0.6);  
+background: #FFFFFF99;
+hero підвал: #2F303A;
+1 секція: #F5F5F5
+2 секція: #F5F4FA;
+акцент: #2196F3
+активна кнопка: #188CE8
+ */
+:root {
+  --main-color: #757575;
+  --title-text-color: #212121;
+  --accent-color: #2196f3;
+  --white-color: #ffffff;
+  --transparent-color: #ffffff99;
+  --bg-color-dark: #2f303a;
+  --bg-color-work: #f5f5f5;
+  --bg-color-team: #f5f4fa;
+}
+
+body {
+  color: var(--main-color);
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.03em;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.list {
+  list-style: none;
+}
+
+/* Logo */
+.header-logo {
+  color: #000;
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 26px;
+  line-height: calc(31 / 26);
+  text-decoration: none;
+}
+.logo-style {
+  color: var(--accent-color);
+}
+
+/* Header */
+.header {
+  background-color: var(--white-color);
+}
+.header-link {
+  color: var(--title-text-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.02em;
+  cursor: pointer;
+}
+.header-auth-nav .link {
+  color: inherit;
+}
+.current {
+  color: var(--accent-color);
+}
+.header-link:hover,
+.header-link:focus {
+  color: var(--accent-color);
+}
+
+/* Hero */
+.hero {
+  text-align: center;
+  letter-spacing: 0.06em;
+  background-color: var(--bg-color-dark);
+}
+.hero-title {
+  color: var(--white-color);
+  font-weight: 900;
+  font-size: 44px;
+  line-height: calc(60 / 44);
+  text-transform: uppercase;
+}
+.hero-button {
+  color: var(--white-color);
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: calc(30 / 16);
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+  background-color: var(--accent-color);
+}
+
+/* Наша ефективність */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+.section {
+  background-color: var(--bg-color-work);
+}
+.section-title {
+  color: var(--title-text-color);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  text-transform: uppercase;
+}
+.section-text {
+  font-size: 14px;
+  line-height: calc(24 / 14);
+}
+
+/* Чим ми займаємося */
+.title-work-team {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: calc(42 / 36);
+  text-align: center;
+  color: var(--title-text-color);
+}
+.work {
+  background-color: var(--bg-color-work);
+}
+
+/* Наша команда */
+.team-title-third {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: calc(19 / 16);
+  text-align: center;
+  color: var(--title-text-color);
+}
+.team {
+  background-color: var(--bg-color-team);
+}
+.list-item {
+  background-color: var(--white-color);
+}
+.team-position {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: calc(19 / 16);
+  text-align: center;
+}
+
+/* Підвал */
+.footer {
+  background-color: var(--bg-color-dark);
+}
+.footer-logo-style {
+  color: var(--white-color);
+}
+.address {
+  color: var(--white-color);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: calc(24 / 14);
+  letter-spacing: 0.03em;
+}
+.mail-tel {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: calc(24 / 14);
+  letter-spacing: 0.03em;
+  color: var(--transparent-color);
+}
+
+/* Portfolio */
+.project {
+  background-color: var(--bg-color-work);
+}
+
+/* Кнопки */
+.button {
+  color: var(--title-text-color);
+  font-family: inherit;
+  background-color: var(--bg-color-team);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: calc(26 / 16);
+  text-align: center;
+  cursor: pointer;
+}
+.button-current {
+  color: var(--white-color);
+  background-color: var(--accent-color);
+}
+
+/* Проекти */
+.project-title {
+  color: var(--title-text-color);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: calc(36 / 18);
+  letter-spacing: 0.06em;
+}
+.project-text {
+  font-size: 16px;
+  line-height: calc(30 / 16);
+}
