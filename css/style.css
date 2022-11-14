@@ -38,13 +38,13 @@ body {
 }
 
 .container {
-  width: 1170px;
+  width: 1200px;
   margin-right: auto;
   margin-left: auto;
   padding-right: 15px;
   padding-left: 15px;
 
-  outline: red 1px solid;
+  /* outline: red 1px solid; */
 }
 
 .link {
@@ -72,16 +72,17 @@ body {
   line-height: calc(31 / 26);
   text-decoration: none;
 
-  color: #000;
+  color: var(--accent-color);
 }
 .logo-style {
-  color: var(--accent-color);
+  color: #000;
 }
 
 /* Header */
 
 .page-header {
-  padding: 0;
+  padding-top: 24px;
+  padding-bottom: 25px;
 }
 
 .page-header .container {
@@ -135,13 +136,17 @@ body {
 /* Hero */
 
 .hero {
-  text-align: center;
+  padding-top: 200px;
+  padding-bottom: 200px;
 
+  text-align: center;
   background-color: var(--bg-color-dark);
 }
 
 .hero-title {
+  margin: 0 auto;
   margin-bottom: 30px;
+  max-width: 696px;
 
   font-weight: 900;
   font-size: 44px;
@@ -173,26 +178,24 @@ body {
   cursor: pointer;
 }
 
-.hero-description {
-  padding-top: 200px;
-  padding-right: 452px;
-  padding-bottom: 200px;
-  padding-left: 452px;
-}
-
 /* Наша ефективність */
 .about {
+  padding-top: 94px;
+
   background-color: var(--bg-color-work);
 }
 
 .about-list {
   display: flex;
-  margin-left: -30px;
 }
 
 .about-list .item {
-  flex-basis: calc((100% - 120px) / 4);
+  flex-basis: calc((100% - 90px) / 4);
   margin-left: 30px;
+}
+
+.about-list .item:first-child {
+  margin-left: 0;
 }
 
 .visually-hidden {
@@ -222,22 +225,26 @@ body {
   font-size: 14px;
   line-height: calc(24 / 14);
 }
-.about-description {
-  padding-top: 94px;
-}
+
 /* Чим ми займаємося */
 .work {
   padding: 94px 0;
   background-color: var(--bg-color-work);
 }
+
 .work .list {
   display: flex;
-  margin-left: -30px;
 }
+
 .work-list .item {
-  width: calc((100% - 90px) / 3);
+  width: calc((100% - 60px) / 3);
   margin-left: 30px;
 }
+
+.work-list .item:first-child {
+  margin-left: 0;
+}
+
 .title-work-team {
   margin-bottom: 50px;
   font-weight: 700;
@@ -255,11 +262,7 @@ body {
   background-color: var(--bg-color-team);
 }
 
-.team-img {
-  margin-bottom: 30px;
-}
 .team-title {
-  /* padding-top: 30px; */
   margin-bottom: 10px;
 
   font-weight: 500;
@@ -270,19 +273,26 @@ body {
 }
 .team-list {
   display: flex;
-  margin-left: -30px;
 }
 
 .team-list .item {
-  width: calc((100% - 120px) / 4);
+  width: calc((100% - 90px) / 4);
   margin-left: 30px;
 }
+
+.team-list .item:first-child {
+  margin-left: 0;
+}
+
 .team-list .item {
   background-color: var(--white-color);
 }
-.team-position {
-  margin-bottom: 30px;
 
+.team-container {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.team-position {
   font-weight: 400;
   font-size: 16px;
   line-height: calc(19 / 16);
@@ -291,43 +301,49 @@ body {
 
 /* Підвал */
 .footer {
+  padding: 60px 0;
   background-color: var(--bg-color-dark);
 }
+
 .footer-logo {
   display: block;
-  padding-top: 60px;
-  margin: 0;
+  margin-bottom: 20px;
 }
-.footer-logo-style {
+
+.footer-color {
   color: var(--white-color);
 }
 .address {
   display: block;
-  margin-top: 20px;
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: calc(24 / 14);
+  letter-spacing: 0.03em;
+
   color: var(--white-color);
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: calc(24 / 14);
-  letter-spacing: 0.03em;
 }
+
+.footer-list .item:not(:last-child) {
+  margin-bottom: 9px;
+}
+
 .mail-tel {
-  display: block;
-  margin-top: 9px;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: calc(24 / 14);
   letter-spacing: 0.03em;
+
   color: var(--transparent-color);
-}
-.footer-list .item:last-child {
-  padding-bottom: 60px;
 }
 
 /* Portfolio */
 .project {
-  background-color: var(--bg-color-work);
+  padding-top: 94px;
+  padding-bottom: 94px;
+  background-color: var(--white-color);
 }
 
 /* Кнопки */
@@ -335,14 +351,13 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-
   margin-bottom: 50px;
-  padding-top: 180px;
 }
 
 .button-list .item:not(:first-child) {
   margin-left: 8px;
 }
+
 .button {
   padding-top: 6px;
   padding-right: 22px;
@@ -385,8 +400,9 @@ body {
   margin-bottom: 0;
 }
 
-.project-img {
-  margin-bottom: 20px;
+.project-container {
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 .project-title {
   margin-bottom: 4px;
@@ -399,8 +415,6 @@ body {
   color: var(--title-text-color);
 }
 .project-text {
-  margin-bottom: 20px;
-
   font-size: 16px;
   line-height: calc(30 / 16);
 }
