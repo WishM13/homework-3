@@ -47,6 +47,11 @@ body {
   /* outline: red 1px solid; */
 }
 
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 .link {
   text-decoration: none;
 }
@@ -228,7 +233,6 @@ body {
 
 /* Чим ми займаємося */
 .work {
-  padding: 94px 0;
   background-color: var(--bg-color-work);
 }
 
@@ -256,9 +260,6 @@ body {
 
 /* Наша команда */
 .team {
-  padding-top: 94px;
-  padding-bottom: 94px;
-
   background-color: var(--bg-color-team);
 }
 
@@ -313,6 +314,7 @@ body {
 .footer-color {
   color: var(--white-color);
 }
+
 .address {
   display: block;
 
@@ -341,8 +343,6 @@ body {
 
 /* Portfolio */
 .project {
-  padding-top: 94px;
-  padding-bottom: 94px;
   background-color: var(--white-color);
 }
 
@@ -403,6 +403,9 @@ body {
 .project-container {
   padding-top: 20px;
   padding-bottom: 20px;
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
 }
 .project-title {
   margin-bottom: 4px;
