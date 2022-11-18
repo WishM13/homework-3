@@ -85,16 +85,11 @@ body {
 
 /* Header */
 
-.page-header {
-  padding-top: 24px;
-  padding-bottom: 25px;
-
-  border-bottom: 1px solid #ececec;
-}
-
 .page-header .container {
   display: flex;
   align-items: center;
+
+  border-bottom: 1px solid #ececec;
 }
 
 .header-nav {
@@ -115,11 +110,17 @@ body {
 }
 
 .header-link {
-  color: var(--title-text-color);
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
   font-weight: 500;
   font-size: 14px;
   line-height: calc(16 / 14);
   letter-spacing: 0.02em;
+
+  color: var(--title-text-color);
+
   cursor: pointer;
 }
 
@@ -145,6 +146,8 @@ body {
 .hero {
   padding-top: 200px;
   padding-bottom: 200px;
+  margin-left: auto;
+  margin-right: auto;
 
   text-align: center;
   background-color: var(--bg-color-dark);
@@ -187,9 +190,9 @@ body {
 
 /* Наша ефективність */
 .about {
-  padding-top: 94px;
+  padding-bottom: 0;
 
-  background-color: var(--bg-color-work);
+  background-color: var(--white-color);
 }
 
 .about-list {
@@ -228,6 +231,7 @@ body {
 
   color: var(--title-text-color);
 }
+
 .about-text {
   font-size: 14px;
   line-height: calc(24 / 14);
@@ -235,7 +239,7 @@ body {
 
 /* Чим ми займаємося */
 .work {
-  background-color: var(--bg-color-work);
+  background-color: var(--white-color);
 }
 
 .work .list {
@@ -315,6 +319,7 @@ body {
 .footer-logo {
   display: block;
   margin-bottom: 20px;
+  margin-right: 0;
 }
 
 .footer-color {
@@ -384,7 +389,8 @@ body {
   color: var(--title-text-color);
 }
 
-.button-current {
+.button:hover,
+.button:focus {
   color: var(--white-color);
   background-color: var(--accent-color);
 }
@@ -416,6 +422,7 @@ body {
   border-bottom: 1px solid #eeeeee;
   border-left: 1px solid #eeeeee;
 }
+
 .project-title {
   margin-bottom: 4px;
 
@@ -426,6 +433,7 @@ body {
 
   color: var(--title-text-color);
 }
+
 .project-text {
   font-size: 16px;
   line-height: calc(30 / 16);
